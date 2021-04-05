@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.containerapp {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3px 5px;
+    background: #fff;
+    /*border-left: 1px solid rgba(6, 15, 8, 0.49);*/
+    /*border-right: 1px solid rgba(6, 15, 8, 0.49);*/
+    border-radius: 3px;
+}
+
+@media (min-width: 400px) {
+    .containerapp {
+        margin: 1.5rem auto;
+    }
+}
+
+/* Result Component */
+.result {
+    padding: 1.5rem 2.5rem;
+}
+
+/* Quiz Component */
+.answerOptions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 1px #eee;
+    border-radius: 5px;
+}
+
+/* QuestionCount Component */
+.questionCount {
+    text-align: right;
+    padding: 1.5rem 2.5rem 0;
+    font-size: 14px;
+}
+
+/* Question Component */
+.question {
+    margin: 0;
+    padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+}
+
+.imgQuestion {
+    width: 100%; /* ширина картинки */
+    height: auto; /* высота картинки */
+    border: 3px solid #eee;
+    border-radius: 5px;
+}
+
+/* AnswerOption Component */
+/* Image Option*/
+.answerOption {
+    /*border-top: 1px solid #eee;*/
+    flex: 0 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/*.answerOption:hover {*/
+/*  background-color: #eefbfe;*/
+/*}*/
+
+.answerOption:active {
+    background-color: #b9f7fe;
+}
+
+
+.answerOptionNoHover {
+    pointer-events: none;
+}
+
+.answerOptonFlex4Row {
+    flex: 1 1 22%;
+}
+
+.answerOptionDisabled:active {
+    background-color: #ffa3a0;
+}
+
+.answerOptionDisabled {
+    /*opacity: 0.4;*/
+}
+
+.answerOptionBacklight {
+    background-color: #b9f7fe;
+    pointer-events: none;
+}
+
+.answerOptionSelected{
+    background-color: #b9f7fe;
+    /*border: 1px solid black;*/
+}
+
+.answerOptionBacklight:hover {
+    background-color: #b9f7fe;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.radioCustomLabel:checked {
+    border: #333333 solid 2px;
+}
+
+.imgAnswercontainer {
+    width: 93%;
+    max-width: 960px;
+    margin: 0.5rem auto; /* центрируем основной контейнер */
+}
+.imgAnswer {
+    width: 100%; /* ширина картинки */
+    height: auto; /* высота картинки */
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+
+/*.imgAnswer:hover {*/
+/*opacity: 1;*/
+/*}*/
+
+/*.radioCustomButton {*/
+/*position: absolute;*/
+/*width: auto;*/
+/*opacity: 0;*/
+
+/*}*/
+
+.radioCustomButton,
+.radioCustomLabel {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/*.radioCustomLabel {*/
+/*position: relative;*/
+/*width: 100%;*/
+/*margin: 0;*/
+/*padding: 1.5rem 2.5rem 1.5rem 5rem;*/
+/*font-size: 16px;*/
+/*line-height: 1.5;*/
+/*}*/
+
+/*.radioCustomButton ~ .radioCustomLabel:before {*/
+/*position: absolute;*/
+/*top: 20px;*/
+/*left: 38px;*/
+/*width: 28px;*/
+/*height: 28px;*/
+/*content: '';*/
+/*display: inline-block;*/
+/*vertical-align: middle;*/
+/*background: #fff;*/
+/*border: 1px solid #bbb;*/
+/*border-radius: 50%;*/
+/*transition: all 0.3s;*/
+/*}*/
+
+/*.radioCustomButton:checked ~ .radioCustomLabel:before {*/
+/*content: '';*/
+/*background: #8bc53f url(./svg/icon-check.svg) no-repeat;*/
+/*background-size: 27px;*/
+/*border-color: #8bc53f;*/
+/*}*/
+
+/* Animation */
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.fade-leave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-appear {
+    opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.center-err-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    color: #333c44;
+    font-weight: bold;
+}

@@ -1,0 +1,6 @@
+export const actionTypes = {
+  SETUSERS: 'SETUSERS',
+  SETUSER: 'SETUSER',
+  SETERROR: 'SETERROR',
+  CLEARERROR: 'CLEARERROR',
+};
