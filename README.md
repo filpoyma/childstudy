@@ -1,9 +1,9 @@
 ## Система для прохождения детских тестов по психологии
 
-Сайт: http://childstudy.ru
+Сайт: https://childstudy.herokuapp.com/home
 
 ##   Teхнологии и фреймворки
- React (Hooks), Redux, NodeJS,  SemanticUI
+ React (Hooks), Redux, SemanticUI, NodeJS, Express, MongoDB  
 
 ## Создатель
 
