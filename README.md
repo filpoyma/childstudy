@@ -8,4 +8,5 @@
 [Роман Парамзин](https://github.com/filpoyma)
 filpoyma@gmail.com
 
-https://user-images.githubusercontent.com/34694422/235064353-eabf9866-0612-4947-927c-4aa0d57e0d6e.png
+<img width="711" alt="Screenshot 2023-04-28 at 08 29 34" src="https://user-images.githubusercontent.com/34694422/235064555-c9c9db1f-8942-4aad-8830-9ccc251b950c.png">
+
