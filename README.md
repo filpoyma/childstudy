@@ -1,6 +1,6 @@
 ## Система для прохождения детских тестов по психологии
 
-Сайт: https://childstudy.herokuapp.com/home
+Сайт: [https://getpsyched.onrender.com](https://getpsyched.onrender.com)
 
 ##   Teхнологии и фреймворки
  React (Hooks), Redux, SemanticUI, NodeJS, Express, MongoDB  
